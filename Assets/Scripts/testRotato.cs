@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class testRotato : MonoBehaviour
 {
-    public ridgidbody rb3d;
+ //   public ridgidbody rb3d;
 
     void Awake()
     {
