@@ -22,28 +22,28 @@ public class testRotato : MonoBehaviour
         if (Input.GetAxis("Mouse X") < 0)
         {
             //Adding force, pushing left
-            rb3d.AddForce(-5000f, 0f, 0f);
+            rb3d.AddForce(-4000f, 0f, 0f);
             //Code for action on mouse moving left
             print("Mouse moved left");
         }
         if (Input.GetAxis("Mouse X") > 0)
         {
             //Adding force, pushing right
-            rb3d.AddForce(5000f, 0f, 0f);
+            rb3d.AddForce(4000f, 0f, 0f);
             //Code for action on mouse moving right
             print("Mouse moved right");
         }
         if (Input.GetAxis("Mouse Y") < 0)
         {
             //Adding Force, pushing down
-            rb3d.AddForce(0f, -5000f, 0f);
+            rb3d.AddForce(0f, -4000f, 0f);
             //Code for action on mouse moving left
             print("Mouse moved down");
         }
         if (Input.GetAxis("Mouse Y") > 0)
         {
             //Adding Force, pushing up
-            rb3d.AddForce(0f, 5000f, 0f);
+            rb3d.AddForce(0f, 4000f, 0f);
             //Code for action on mouse moving right
             print("Mouse moved up");
         }
