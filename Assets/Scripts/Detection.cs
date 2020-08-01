@@ -26,13 +26,15 @@ public class Detection : MonoBehaviour
     {
        print("Something is entering the box");
        GameScore++;
+        ScoreScript.scoreValue++;
     }
 
     private void OnTriggerExit()
     {
        print("Something is exiting the box");
        GameScore--;
-       
+        ScoreScript.scoreValue--;
+
     }
 
     // Update is called once per frame
