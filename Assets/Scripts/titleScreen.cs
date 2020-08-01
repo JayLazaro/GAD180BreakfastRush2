@@ -16,6 +16,7 @@ public class titleScreen : MonoBehaviour
         {
 
             Application.LoadLevel("3d scene");
+            ScoreScript.scoreValue=0;
         }
 
 

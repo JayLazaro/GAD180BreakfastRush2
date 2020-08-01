@@ -11,6 +11,7 @@ public class ScoreScript : MonoBehaviour
     Text score;
 
 
+
     // Start is called before the first frame update
     void Start()
     {
@@ -21,5 +22,10 @@ public class ScoreScript : MonoBehaviour
     void Update()
     {
         score.text = "Score: " + scoreValue + " / 250";
+        
+
+
+
+
     }
 }

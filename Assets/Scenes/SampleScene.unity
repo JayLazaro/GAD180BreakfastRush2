@@ -420,3 +420,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb3d: {fileID: 1473406242}
+  rotato: 0
