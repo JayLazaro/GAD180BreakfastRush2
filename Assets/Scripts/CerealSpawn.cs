@@ -21,11 +21,11 @@ public class CerealSpawn : MonoBehaviour
 
 
             GameObject prefab = Resources.Load("Cube") as GameObject;
-            for (int i = 0; i < 200; i++)
+            for (int i = 0; i < 250; i++)
             {
                 GameObject go = Instantiate(prefab) as GameObject;
                 go.transform.position = GameObject.Find("SpawnPoint").transform.position;
-            yield return new WaitForSeconds(.1f);
+            yield return new WaitForSeconds(.06f);
         }
         
 

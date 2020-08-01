@@ -22,14 +22,14 @@ public class testRotato : MonoBehaviour
         if (Input.GetAxis("Mouse X") < 0)
         {
             //Adding force, pushing left
-            rb3d.AddForce(-4000f, 0f, 0f);
+            rb3d.AddForce(1000f, 0f, 0f);
             //Code for action on mouse moving left
             print("Mouse moved left");
         }
         if (Input.GetAxis("Mouse X") > 0)
         {
             //Adding force, pushing right
-            rb3d.AddForce(4000f, 0f, 0f);
+            rb3d.AddForce(-1000f, 0f, 0f);
             //Code for action on mouse moving right
             print("Mouse moved right");
         }
@@ -52,7 +52,7 @@ public class testRotato : MonoBehaviour
         //Rotation Code, Used to Rotate Box
         if (Input.GetKey(KeyCode.Space) & rotato <= 0)
         {
-            rb3d.AddTorque(0f, 0f, 1000f);
+            rb3d.AddTorque(0f, 0f, 200f);
         }
         
         if (Input.GetKey(KeyCode.Space) & rotato >= 1)

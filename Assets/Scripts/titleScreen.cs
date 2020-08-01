@@ -7,17 +7,17 @@ public class titleScreen : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-    
+
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.E))
         {
-         
-         print("This code works");
+
+            Application.LoadLevel("3d scene");
         }
-   
+
+
     }
 }
