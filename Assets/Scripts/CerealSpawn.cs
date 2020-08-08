@@ -26,7 +26,7 @@ public class CerealSpawn : MonoBehaviour
         {
             GameObject go = Instantiate(prefab) as GameObject;
             go.transform.position = GameObject.Find("SpawnPoint").transform.position;
-            yield return new WaitForSeconds(.06f);
+            yield return new WaitForSeconds(.07f);
         }
 
 

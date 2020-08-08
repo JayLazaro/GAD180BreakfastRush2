@@ -15,7 +15,7 @@ public class titleScreen : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.E))
         {
 
-            Application.LoadLevel("3d scene");
+            Application.LoadLevel("may the forth");
             ScoreScript.scoreValue=0;
         }
 
