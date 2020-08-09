@@ -7,6 +7,13 @@ public class CerealSpawn : MonoBehaviour
 
     public GameObject SpawnPoint;
 
+    // Int to track Cereal starting to fall.
+    private int gameStartN = 1;
+
+    public float carrotate;
+
+    private GameObject gamerSups;
+
     //bool pouring = false;
   
 
@@ -21,11 +28,29 @@ public class CerealSpawn : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        /*
+        if (Input.GetKeyDown(KeyCode.Space) ) (0) & carrotate >= 10
+        {
+            Instantiate {gamerSups,transform.position, Quaterion.identity };
+
+            carrotate = 0;
+
+
+        }
+        if (carrotate < 10)
+        {
+            carrotate +=
+        }
+        */
+
+        // Input the space key in order to start the cereal flow 
+        if (SpawnPoint.transform.rotation.eulerAngles.z >= 50 & gameStartN >= 1) 
         {
             StartCoroutine("pourcereal");
-        }
 
+            gameStartN = 0;
+        }
+        
     }
 
     IEnumerator pourcereal()

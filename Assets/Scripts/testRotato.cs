@@ -7,6 +7,8 @@ public class testRotato : MonoBehaviour
 
     public Rigidbody rb3d;
 
+    public GameObject Game_box;
+
     public int rotato;
 
 
@@ -50,20 +52,20 @@ public class testRotato : MonoBehaviour
 
 
         //Rotation Code, Used to Rotate Box
-        if (Input.GetKey(KeyCode.Space) & rotato <= 0)
+        if (Input.GetKey(KeyCode.Space) & Game_box.transform.rotation.eulerAngles.z <= 50)
         {
-            rb3d.AddTorque(0f, 0f, 18f);
+            rb3d.AddTorque(0f, 0f, -15f);
         }
-        
-        if (Input.GetKey(KeyCode.Space) & rotato >= 1)
+
+        if (Input.GetKey(KeyCode.Space) & Game_box.transform.rotation.eulerAngles.z >= 50)
         {
-            rb3d.AddTorque(0f, 0f, -0.5f);
+            rb3d.AddTorque(0f, 0f, 15f);
         }
-        
-        
     }
+
     void FixedUpdate()
     {
+        /*
         if (Input.GetKeyUp(KeyCode.Space) & rotato <= 0)
         {
             rotato = 0;
@@ -72,5 +74,8 @@ public class testRotato : MonoBehaviour
         {
             rotato = 0;
         }
+        */
+       
     }
+
 }

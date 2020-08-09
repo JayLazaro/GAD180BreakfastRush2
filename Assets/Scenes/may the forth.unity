@@ -127,20 +127,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1833953991}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &22938227
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 22938225}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 30b10eeb1dbc741c99e25f18d62bc914, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cereal: {fileID: 2258794710184351086, guid: 63a4e87d806899f4d85d663b94d8e97c, type: 3}
-  SpawnPoint: {fileID: 22938225}
 --- !u!1 &274356155
 GameObject:
   m_ObjectHideFlags: 0
@@ -1416,7 +1402,7 @@ PrefabInstance:
     - target: {fileID: 745127077195811435, guid: a3ac112b0938876469d84300dda0b0c6,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.00847
+      value: -0.00767
       objectReference: {fileID: 0}
     - target: {fileID: 745127077195811435, guid: a3ac112b0938876469d84300dda0b0c6,
         type: 3}
@@ -3398,7 +3384,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8375595597257974884}
   m_LocalRotation: {x: 0, y: -0.99999523, z: 0.0030892098, w: 0}
-  m_LocalPosition: {x: 4.59, y: 2.275, z: -1.6979997}
+  m_LocalPosition: {x: 0.9, y: 2.275, z: -1.6979997}
   m_LocalScale: {x: 80.43615, y: 80.43613, z: 80.43616}
   m_Children:
   - {fileID: 1376718042}
@@ -3565,6 +3551,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb3d: {fileID: 8375595597257974886}
+  Game_box: {fileID: 8375595597257974884}
   rotato: 0
 --- !u!54 &8375595597257974886
 Rigidbody:

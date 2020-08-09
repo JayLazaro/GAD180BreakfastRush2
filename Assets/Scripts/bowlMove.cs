@@ -14,6 +14,7 @@ public class bowlMove : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // Makes the bowl move back and forth along the bench.
         transform.position = new Vector3(Mathf.PingPong(Time.time * speed, 5), transform.position.y, transform.position.z);
     }
 
