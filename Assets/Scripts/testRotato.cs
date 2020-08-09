@@ -52,7 +52,7 @@ public class testRotato : MonoBehaviour
         //Rotation Code, Used to Rotate Box
         if (Input.GetKey(KeyCode.Space) & rotato <= 0)
         {
-            rb3d.AddTorque(0f, 0f, 10f);
+            rb3d.AddTorque(0f, 0f, 18f);
         }
         
         if (Input.GetKey(KeyCode.Space) & rotato >= 1)

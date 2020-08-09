@@ -7,27 +7,44 @@ public class CerealSpawn : MonoBehaviour
 
     public GameObject SpawnPoint;
 
+    //bool pouring = false;
+  
+
+
     void Start()
 
 
     {
-        StartCoroutine(coroutine());
+       
 
     }
 
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            StartCoroutine("pourcereal");
+        }
 
-    IEnumerator coroutine()
+    }
+
+    IEnumerator pourcereal()
     {
 
 
+        
 
-        GameObject prefab = Resources.Load("Cube") as GameObject;
-        for (int i = 0; i < 250; i++)
-        {
+
+           GameObject prefab = Resources.Load("Cube") as GameObject; //forloop for spawning multiple cubes
+            for (int i = 0; i < 250; i++)
+            {
             GameObject go = Instantiate(prefab) as GameObject;
-            go.transform.position = GameObject.Find("SpawnPoint").transform.position;
+            go.transform.position = GameObject.Find("SpawnPoint").transform.position; //setting spawn location 
             yield return new WaitForSeconds(.07f);
+           
         }
+
+        
 
 
     }
