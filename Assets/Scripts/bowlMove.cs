@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class bowlMove : MonoBehaviour
 {
-    int speed = 2;
+    int speed = 1;
     // Start is called before the first frame update
     void Start()
     {
