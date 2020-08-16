@@ -54,7 +54,7 @@ public class testRotato : MonoBehaviour
         //Rotation Code, Used to Rotate Box
         if (Input.GetKey(KeyCode.Space) & Game_box.transform.rotation.eulerAngles.z <= 50)
         {
-            rb3d.AddTorque(0f, 0f, -15f);
+            rb3d.AddTorque(0f, 0f, -20f);
         }
 
         if (Input.GetKey(KeyCode.Space) & Game_box.transform.rotation.eulerAngles.z >= 50)
