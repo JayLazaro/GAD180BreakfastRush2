@@ -64,9 +64,10 @@ public class CerealSpawn : MonoBehaviour
             for (int i = 0; i < 250; i++)
             {
             GameObject go = Instantiate(prefab) as GameObject;
+            go.transform.localScale = new Vector3(Random.Range(0.05f, 0.2f), Random.Range(0.05f, 0.2f), Random.Range(0.05f, 0.2f));
             go.transform.position = GameObject.Find("SpawnPoint").transform.position; //setting spawn location 
             yield return new WaitForSeconds(.07f);
-           
+            
         }
 
         
